@@ -7,7 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class Test1Component implements OnInit {
 
-  @Input() data: any;
   @Input() test: any;
   constructor() { }
 
