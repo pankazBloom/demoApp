@@ -1,0 +1,18 @@
+<h1>Hello</h1>
+<h2>Welcome {{user}}</h2>
+
+<input type="checkbox" [checked]="checkBox" id="checkBox">
+<label for="checkBox">Check Box</label>
+<br>
+<br>
+<input type="text" [(ngModel)]="user">
+<button (click)="showAlert()">Show</button>
+
+<div class="mainDiv">
+    <div>
+        <app-test1 [test]="user"></app-test1>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>
